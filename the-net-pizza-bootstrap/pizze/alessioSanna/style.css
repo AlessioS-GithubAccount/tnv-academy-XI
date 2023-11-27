@@ -1,0 +1,555 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto&family=Titillium+Web&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgba(22, 22, 22);
+}
+
+/* css navbar generale */
+
+.container-fluid{
+    padding-left: 4vw;
+}
+
+#background-video{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.navbar {
+background-color: rgba(22, 22, 22, 0.95 ) !important; 
+}
+
+/* css  dei bottoni dentro id="navbarNavDropdown" */
+#logoPage{
+    margin-left: 2vw;
+}
+.nav-item{
+    margin-right: 4vw;
+}
+.navbar-nav {
+    margin-left: auto;
+    margin-right: 4vw;
+}
+
+.navbar-nav .nav-link {
+    color: rgb(191, 45, 45) !important;
+    font-weight: 600; /* Semibold */
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    color: antiquewhite !important;
+    font-weight: 600; /* Semibold */
+}
+
+/* css del nome del sito */
+.navbar-brand {
+    color: antiquewhite !important;
+    font-size: 2.5em;
+    font-weight: 600; /* Semibold */
+    text-decoration: none;
+    padding-left: 26vw;
+}
+
+a.navbar-brand{
+    margin-right: auto;
+}
+
+.navbar-brand:hover {
+    color: antiquewhite !important;
+    font-weight: 600; /* Semibold */
+    text-decoration: none;
+}
+
+.navbar-brand{
+    margin-left: 2vw;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    color: antiquewhite;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+p{
+    font-family: 'Titillium Web', sans-serif;
+    color: antiquewhite;
+}
+
+
+header {
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+
+    text-shadow: 0 0 4px black;
+    margin-top: 48px;
+    position: relative; 
+}
+
+header h1 {
+    font-size: 6rem;
+    margin: 0;
+    position: absolute; 
+    top: 30%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+header p {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    margin: 0;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+div.card-image > img {
+        width: 100%; 
+        height: auto; 
+}
+
+/* css bio */
+section#bio{
+    color: antiquewhite;
+    text-align: center;
+}
+
+.titleBio{
+    text-align: center;
+    margin-bottom: 64px;
+}
+
+.bio p {
+    color: antiquewhite;
+    margin-top: 64px;
+}
+
+.col p{
+    margin-top: 32px;
+    margin-bottom: 52px;
+}
+
+#imgbw{
+    width: 60%;
+    display: block;
+    margin: 0 auto;
+}
+
+.containerRicetta{
+    width: 100%;
+    margin-top: 150px;
+}
+
+#farine{
+    width: 90%;
+}
+
+#pizzeriaImg{
+width: 70%;
+}
+
+/* Ordina subito */
+fieldset{
+    color: antiquewhite;
+}
+
+
+#Ordina{
+    margin-top: 8vh;
+}
+
+.border {
+    width: fit-content;
+    border: 4px solid white;
+    border-radius: 20px;
+}
+
+.order-column {
+    margin-right: 100px;
+}
+
+#imgmenu{
+    padding: 50px;
+    width: 120%;
+    height: auto;
+}
+
+/* menu section */
+.btn-primary{
+    background-color: rgba(0, 0, 0, 0);
+    border-color:orange;
+    color: black;
+}
+
+.btn-primary:active {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+#pizzeClassiche, #primi, #dessert{
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+    color: black;
+}
+
+.card-text{
+    color: black;
+}
+
+.card-body{
+    padding-bottom: 40px;
+}
+
+.btn-custom {
+    background-color: rgb(244, 0, 0, 0.4);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: block;
+}
+
+.btn-custom:hover {
+    color: black;
+}
+
+.curtain{
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(244, 0, 0, 0);
+    border-color:orange;
+    text-decoration: none;
+    color: black;
+}
+
+.curtain:hover{
+    height: 16vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(244, 0, 0, 0.4);
+    border-color:orange;
+    text-decoration: none;
+    color: black;
+}
+
+.card-body{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+}
+
+.pb-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section#menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    gap: 16px;
+}
+
+section#menu ul li {
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    height: 150px;
+    width: 280px;
+    list-style-type: none;
+    padding: 8px;
+    box-shadow: 1px 1px 2px lightgray;
+}
+
+section#contacts{
+    color: antiquewhite;
+}
+
+#formOrdina{
+    color: rgb(255, 255, 255);
+}
+
+.border {
+    border: 30px;
+    border-color: #c1922e;
+}
+
+.titleTablet{
+    margin-bottom: 50px;
+}
+
+.rowContacts{
+    width: 50%;
+}
+
+.rowOrdinaSubito{
+    width: 100%;
+}
+
+
+#pizzamenu{
+    width: 90%;
+}
+
+
+
+/* orari apertura */
+#containerOrari {
+    width: 100%;
+    height: 50vh;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    color: antiquewhite;
+    border: 3px white;
+    margin-top: 50px;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra orizzontalmente */
+    position: relative;
+    text-align: center;
+}
+
+#containerOrari::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(./images/Menù-Pizzeria_Bianco-e-Nero-2-1024x731.jpg);
+    background-size: cover;
+    filter: blur(3px);
+}
+
+#tabOrari {
+    position: relative;
+    z-index: 1;
+    font-family: 'Titillium Web', sans-serif;
+    color: white;
+    border: 3px white;
+}
+footer {
+    margin-top: 64px;
+    background-color: #8C2703;
+    color: white;
+    box-shadow: 0 -3px 5px lightgray;
+}
+
+footer section {
+    padding: 32px;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 300px;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
+
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-top: 64px;
+}
+
+.container section {
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.section-title {
+    color: antiquewhite;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 12vh;
+}
+
+.where-we-are {
+    text-align: left;
+}
+
+
+#falseHeader{
+    width: 100%;
+    height: 2vh;
+}
+
+#falseHeader2{
+    width: 100%;
+    height: 5vh;
+    
+}
+
+section.contacts {
+    color: antiquewhite;
+}
+
+.separator {
+    width: 100px;
+    height: 4px;
+    background-color: #c1922e;
+    margin: 0 auto;
+}
+
+.Sepatator-mg{
+    margin-bottom: 50px;
+}
+
+.menu h3 {
+    font-size: 1.5em;
+}
+
+a {
+    color: #730217;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c80125;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #8C2703;
+    color: white;
+}
+
+table {
+    border: 1px solid lightgray;
+    width: 80%;
+}
+
+table td, table th {
+    padding: 4px;
+    text-align: left;
+}
+
+table th {
+    background-color: white;
+    color: #8C2703;
+}
+
+input[type="submit"] {
+    margin: 8px 0;
+    background-color: #0371A6;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px;
+    color: white;
+}
+
+/* footer2 */
+.footer2 {
+    width: 100%;
+    height: auto;
+    color: antiquewhite;
+
+}
+
+.buttonbar-social{
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons li {
+    display: inline-block;
+    font-size: 3vw;
+    margin-right: 70px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: antiquewhite; 
+}
+
+.social-icons a:hover {
+    color: rgb(244, 0, 0);
+}
+
+#therealfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.address{
+    margin-top: 20px;
+    text-align: center ;
+}
+
+
+@media screen and (max-width: 600px) { 
+    header h1 {
+        margin-top: 42px;
+        font-size: 4rem;
+    }
+    
+    header p {
+        color: white;
+        font-family: 'Pacifico', cursive;
+        font-size: 1.5rem;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .section-title  {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 400px) { 
+    header h1 {
+        margin-top: 42px;
+        font-size: 2rem;
+    }
+    
+    header p {
+        color: white;
+        font-family: 'Pacifico', cursive;
+        font-size: 0.8rem;
+        margin-top: 16px;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .section-title  {
+        font-size: 2.5em;
+    }
+
+
+}
