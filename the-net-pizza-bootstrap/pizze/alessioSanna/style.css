@@ -508,7 +508,7 @@ table th {
 
 input[type="submit"] {
     margin: 8px 0;
-    background-color: #0371A6;
+    background-color: #00000000;
     border: 0;
     border-radius: 5px;
     padding: 8px;
@@ -560,12 +560,18 @@ input[type="submit"] {
 }
 
 
-@media screen and (max-width: 600px) { 
+/* Dimensioni schermo fino agli smartphone più diffusi al momento */
+@media screen and (max-width: 600px) {
+    /* Inserisci qui le regole CSS per gli smartphone */
+    .navbar {
+        height: 100px;  
+    }
+    
     header h1 {
         margin-top: 42px;
         font-size: 4rem;
     }
-    
+
     header p {
         color: white;
         font-family: 'Pacifico', cursive;
@@ -576,31 +582,34 @@ input[type="submit"] {
         height: 350px;
     }
 
-    .section-title  {
+    .section-title {
         font-size: 2.5em;
     }
 }
 
-@media screen and (max-width: 400px) { 
+/* Dimensioni schermo da smartphone più diffusi a tablet più diffusi */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Inserisci qui le regole CSS per tablet */
     header h1 {
         margin-top: 42px;
-        font-size: 2rem;
+        font-size: 4rem;
     }
-    
+
     header p {
         color: white;
         font-family: 'Pacifico', cursive;
-        font-size: 0.8rem;
-        margin-top: 16px;
+        font-size: 1.5rem;
     }
 
     header {
         height: 350px;
     }
 
-    .section-title  {
+    .section-title {
         font-size: 2.5em;
     }
 
-
+    
 }
+
+
