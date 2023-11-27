@@ -129,12 +129,32 @@ section#bio{
     text-align: center;
 }
 
+
+#LogoBio{
+    width: 20%;
+    text-align: center;
+}
+
+.LogoBioClass{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.alignBio{
+    
+    text-align: center;
+}
+
 .titleBio{
     text-align: center;
     margin-bottom: 64px;
+    margin-top: 32px;
 }
 
 .bio p {
+    width: 80%;
     color: antiquewhite;
     margin-top: 64px;
 }
@@ -144,10 +164,23 @@ section#bio{
     margin-bottom: 52px;
 }
 
+.alignBio {
+    text-align: center; /* Allinea il testo al centro */
+  }
+  
+  .alignBio p {
+    display: inline-block; /* Impedisce al paragrafo di occupare l'intera larghezza del contenitore */
+    text-align: left; /* Allinea il testo del paragrafo a sinistra */
+    max-width: 800px; /* Imposta una larghezza massima per il paragrafo, regola secondo necessità */
+    margin: 0 auto; /* Centra il paragrafo orizzontalmente */
+    margin-top: 32px;
+}
+  
 #imgbw{
     width: 60%;
     display: block;
     margin: 0 auto;
+    text-align: center;
 }
 
 .containerRicetta{
@@ -236,6 +269,8 @@ fieldset{
     text-decoration: none;
     color: black;
 }
+
+
 
 .curtain:hover{
     height: 16vh;
@@ -411,7 +446,11 @@ table th {
 #falseHeader2{
     width: 100%;
     height: 5vh;
-    
+}
+
+#falseHeader3{
+    width: 100%;
+    height: 12vh;
 }
 
 section.contacts {
@@ -423,6 +462,10 @@ section.contacts {
     height: 4px;
     background-color: #c1922e;
     margin: 0 auto;
+}
+
+.mbBio{
+    margin-bottom: 32px;
 }
 
 .Sepatator-mg{
@@ -477,7 +520,6 @@ input[type="submit"] {
     width: 100%;
     height: auto;
     color: antiquewhite;
-
 }
 
 .buttonbar-social{
@@ -513,7 +555,7 @@ input[type="submit"] {
 }
 
 .address{
-    margin-top: 20px;
+    margin-top: 48px;
     text-align: center ;
 }
 

@@ -16,7 +16,9 @@
 
   <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
     <div class="container-fluid">
-      <img id="logoPage" src="./images/pizza-logo-E6DE845BD3-seeklogo.com.png" alt="Logo" width="80vh" height="auto" class="d-inline-block align-text-top">
+      <a href="#falseHeader3">
+        <img id="logoPage" src="./images/pizza-logo-E6DE845BD3-seeklogo.com.png" alt="Logo" width="80vh" height="auto" class="d-inline-block align-text-top">
+      </a>
       <a class="navbar-brand" href="#">THE PIZZA HOUSE</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,10 +49,29 @@
     </header>
 
     <div class="container">
+      <div id="falseHeader3">
+        <h1></h1>
+      </div>
       <section class="bio">
-        <h2 class="titleBio">La nostra storia.</h2>
-        <img id="imgbw" src="./images/photoB&W.jpg" alt="">
-        <p>"Benvenuti nel cuore dell'autentica tradizione culinaria italiana presso la nostra pizzeria! Con una storia radicata nella passione per la buona cucina, il nostro ristorante offre un viaggio gastronomico attraverso le deliziose tradizioni della pizza italiana. Ogni morso è un'esperienza unica, grazie all'uso di ingredienti freschi e di alta qualità. La nostra pizzeria, situata nel pittoresco [Nome della Città], è il luogo ideale per famiglie, amici e amanti del buon cibo. Con il nostro forno a legna e la dedizione alla perfezione, vi invitiamo a condividere momenti indimenticabili di gusto e convivialità. Scoprite la magia delle pizze cotte secondo la tradizione e lasciatevi avvolgere dall'atmosfera accogliente della nostra pizzeria."</p>
+        <div class="LogoBioClass">
+          <img id="LogoBio" src="./images/pizza-logo-E6DE845BD3-seeklogo.com.png" alt="">
+          
+        </div>
+        <div class="separator mbBio"></div>
+        <h1>Benvenuto</h1>
+        <h3>Ti andrebbe una fetta di pizza ??</h3>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat totam eos reiciendis id dolor, 
+          magnam sint at recusandae. Odit voluptatum veniam impedit hic maxime dolorem. 
+          Veritatis adipisci pariatur dicta nihil?</p>
+
+          <div class="alignBio">
+
+            <h2 class="titleBio">La nostra storia.</h2>
+            <img id="imgbw" src="./images/photoB&W.jpg" alt="">
+            <p>"Benvenuti nel cuore dell'autentica tradizione culinaria italiana presso la nostra pizzeria! Con una storia radicata nella passione per la buona cucina, il nostro ristorante offre un viaggio gastronomico attraverso le deliziose tradizioni della pizza italiana. Ogni morso è un'esperienza unica, grazie all'uso di ingredienti freschi e di alta qualità. La nostra pizzeria, situata nel pittoresco [Nome della Città], è il luogo ideale per famiglie, amici e amanti del buon cibo. Con il nostro forno a legna e la dedizione alla perfezione, vi invitiamo a condividere momenti indimenticabili di gusto e convivialità. Scoprite la magia delle pizze cotte secondo la tradizione e lasciatevi avvolgere dall'atmosfera accogliente della nostra pizzeria."</p>
+    
+          </div>
+        
       </section>
      </div>
 
@@ -278,12 +299,9 @@
     <div class="row ">
       <!-- Colonna sinistra -->
       <div class="col-md-6 d-flex ">
-      
         <div class="flex-grow-1 border">  
-         
           <!-- Contenuto sinistra -->
           <section id="Ordina">
-           
             <form id="formOrdina">
               <div class="titleTablet">
                 <h3>Ordina da questo tablet</h3>
@@ -299,10 +317,12 @@
                 <label for="name" class="form-label">Nome e Cognome</label>
                 <input type="text" class="form-control" id="name" placeholder="Inserisci un nominativo per l'ordine" />
               </div>
+
               <div class="mb-3 ">
                 <label for="surname" class="form-label">Numero di telefono</label>
                 <input type="text" class="form-control" id="surname" placeholder="+ 39"/>
               </div>
+
               <div class="form-floating mb-3">
                 <h5>Ordina:</h5>
                 <textarea
@@ -313,28 +333,46 @@
                 ></textarea>
                 
               </div>
-                
-      
-              <div>
-                <fieldset class="mb-3">
-                  <legend>Servizi aggiuntivi</legend>
-                  <input type="checkbox" name="services" /> Posate
-                  <br />
-                  <input type="checkbox" name="services" /> Pizza tagliata
-                  <br />
-                  <input type="checkbox" name="services" /> Consegna premium
-                </fieldset>
-              </div>
-                
-              <div>
-                <fieldset class="mb-3">
-                  <legend>Servizi di pagamento</legend>
-                  <input type="radio" name="payment" /> Contanti
-                  <br />
-                  <input type="radio" name="payment" /> Satispay
-                  <br />
-                  <input type="radio" name="payment" /> Carta di Credito
-                </fieldset>
+             
+              <div class="container">
+                 <form id="formOrdina">
+                <div class="row">
+                  <!-- Colonna sinistra -->
+                  <div class="col-md-6 d-flex">
+                    <div class="flex-grow-1 border">
+                      <!-- Contenuto sinistra -->
+                      <fieldset class="mb-3">
+                        <legend>Servizi di pagamento</legend>
+                        <input type="radio" name="payment" /> Contanti
+                        <br />
+                        <input type="radio" name="payment" /> Satispay
+                        <br />
+                        <input type="radio" name="payment" /> Carta di Credito
+                      </fieldset>
+                      
+                      <section id="Ordina">
+                       
+                          <!-- ... (il resto del form) ... -->
+                        </form>
+                      </section>
+                    </div>
+                  </div>
+              
+                  <!-- Colonna destra -->
+                  <div class="col-md-6">
+                    <div class="flex-grow-1 border">
+                      <!-- Contenuto destra -->
+                      <div>
+                        <fieldset class="mb-3">
+                          <legend>Servizi aggiuntivi</legend>
+                          <input type="checkbox" name="services" /> Posate <br />
+                          <input type="checkbox" name="services" /> Pizza tagliata <br />
+                          <input type="checkbox" name="services" /> Consegna premium
+                        </fieldset>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
       
               
@@ -368,7 +406,7 @@
       
       <section class="where-we-are col-12  col-md-6">
         <h2 class="footer-section-title">Dove Siamo</h2>
-        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=8.744688034057619%2C39.70745078118559%2C8.825025558471681%2C39.75101745196717&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=14/39.7292/8.7849">Visualizza mappa ingrandita</a></small>
+        <iframe width="425" height="350" src="https://www.openstreetmap.org/export/embed.html?bbox=8.442993164062502%2C44.8366389116501%2C8.764343261718752%2C44.99709652176981&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=12/44.9169/8.6037">Visualizza mappa ingrandita</a></small>
         
       </section>
       <section class="where-we-are col-12  col-md-6">
@@ -397,8 +435,12 @@
 
   <div class="footer2 container-fluid">
     <div class="address">
-      <p>Pizzeria The Pizza House – Via Gerolamo Plana, 41 – 15121 Gardaland (VR) 
-      – P.IVA 01098850066 – Privacy e Cookie policy | Progetto web a cura di Alessio Sanna
+      <p>Pizzeria <strong> The Pizza House </strong>– Via Gerolamo Plana, 41 – 15121 Gardaland (VR) </p> 
+      <p>
+        <hr>
+        P.IVA 01098850066 – Privacy e Cookie policy – Progetto web a cura di <a href="http://ASDeveloop">Alessio Sanna</a>
+      </p>
+  
     </p> 
     </div>
     
@@ -421,6 +463,10 @@
           </a>
         </li>
         <li>
+          <a href="https://wa.me/1234567890" target="_blank">
+            <i class="fab fa-whatsapp"></i> <!-- Icona WhatsApp -->
+          </a>
+        </li>
           
 
         
