@@ -344,6 +344,15 @@ section#contacts{
     color: white;
     border: 3px white;
 }
+
+#tabOrari h1,
+#tabOrari h2,
+#tabOrari h3,
+#tabOrari h4,
+#tabOrari h5 {
+  margin-bottom: 30px;
+}
+
 footer {
     margin-top: 64px;
     background-color: #8C2703;
