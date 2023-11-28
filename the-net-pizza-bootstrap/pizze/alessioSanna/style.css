@@ -13,6 +13,7 @@ body {
 
 .container-fluid{
     padding-left: 4vw;
+    text-align: center;
 }
 
 #background-video{
@@ -570,14 +571,118 @@ input[type="submit"] {
     text-align: center ;
 }
 
+/* Stili per schermi di dimensioni fino agli smartphone più diffusi al momento */
+@media screen and (max-width: 600px) {
+    /* Altre regole CSS per gli smartphone... */
+
+    /* Navbar generale */
+    .navbar {
+        height: 100px;  
+    }
+
+    /* Pannello di collapse (burger menu) */
+    .navbar-collapse {
+        background-color: rgba(22, 22, 22, 0.95); /* Stesso colore della navbar */
+    }
+
+   /* Navbar generale */
+.navbar {
+    background-color: rgba(22, 22, 22, 0.95) !important;
+}
+
+/* Logo */
+#logoPage {
+    width: 60px; /* Regola la larghezza del logo per adattarsi meglio ai dispositivi mobili */
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.5rem; /* Riduci la dimensione del testo per adattarsi meglio ai dispositivi mobili */
+    padding-left: 70px;
+    text-align: center;
+}
+
+/* Toggle button */
+.navbar-toggler {
+    background-color: rgba(22, 22, 22, 0.95); /* Adatta il colore del pulsante di toggle */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+    color: rgb(191, 45, 45) !important;
+    font-weight: 600;
+    text-decoration: none;
+}
+}
+
+
+
+/* Altezza della navbar su schermi più piccoli */
+@media screen and (max-width: 600px) {
+    .navbar {
+        height: 60px; /* Regola l'altezza della navbar per adattarsi meglio ai dispositivi mobili */
+    }
+    
+    .navbar-brand {
+        text-align: center;
+        font-size: 1.2em;
+        padding-left: 0;
+    }
+    
+    .navbar-toggler {
+        margin-right: 0;
+    }
+
+    .navbar-nav {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .nav-link {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        margin-right: 50px; /* Sposta verso sinistra di 50px */
+    }
+
+}
+
+
+/* Stili per schermi da smartphone più diffusi a tablet più diffusi */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Altre regole CSS per tablet... */
+
+    /* Navbar generale */
+    .navbar {
+        height: 100px;  
+    }
+
+    /* Pannello di collapse (burger menu) */
+    .navbar-collapse {
+        background-color: rgba(22, 22, 22, 0.95); /* Stesso colore della navbar */
+    }
+}
+
+
 
 /* Dimensioni schermo fino agli smartphone più diffusi al momento */
 @media screen and (max-width: 600px) {
     /* Inserisci qui le regole CSS per gli smartphone */
     .navbar {
         height: 100px;  
+
+        position: fixed; /* Fissa la navbar */
+        top: 0; /* Allinea la navbar con il bordo superiore dello schermo */
+        width: 100%; /* Occupa l'intera larghezza dello schermo */
+        z-index: 1000;
     }
-    
+
+    .navbar-brand{
+        margin-left: 12vw;
+    }
+
+       
     header h1 {
         margin-top: 42px;
         font-size: 4rem;
@@ -590,13 +695,55 @@ input[type="submit"] {
     }
 
     header {
-        height: 350px;
+        height: 500px;
+        padding-top: 100px;
     }
 
     .section-title {
         font-size: 2.5em;
     }
+
+    header h1 {
+        font-size: 2em; /* Adatta la dimensione del carattere in base alla dimensione del body */
+    }
+    
+    header p {
+        font-size: 0.8em; /* Adatta la dimensione del carattere in base alla dimensione del body */
+        color: #ffffff;
+        margin-top: 20px;
+      
+    }
+    
+    .background-video{
+  
+        height: 100%;
+    }
+
+    header {
+        position: relative;
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    #background-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Applica l'effetto di copertura al video */
+    }
+
+    .containerSmartphone{
+        padding-top: 0;
+    }
+
+    .mapAdress{
+        width: 22.81em ;
+        height: 18.13em;
+    }
+    
+
 }
+
+
 
 /* Dimensioni schermo da smartphone più diffusi a tablet più diffusi */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
