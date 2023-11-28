@@ -308,6 +308,41 @@ section#menu ul {
     gap: 16px;
 }
 
+.video-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio (modify as needed) */
+}
+
+.video-container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  .curtain {
+    position: relative;
+    overflow: hidden;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+  }
+
 section#menu ul li {
     border: 1px solid #cccccc;
     border-radius: 5px;
