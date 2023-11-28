@@ -21,6 +21,12 @@ body {
     z-index: -1;
 }
 
+#background-video2{
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
 .navbar {
 background-color: rgba(22, 22, 22, 0.95 ) !important; 
 }
@@ -392,7 +398,7 @@ footer {
     margin-top: 64px;
     background-color: #8C2703;
     color: white;
-    box-shadow: 0 -3px 5px lightgray;
+    box-shadow: 0 0 3px 3px lightgray;
 }
 
 footer section {
@@ -487,8 +493,13 @@ a:hover {
 }
 
 footer {
-    background-color: #8C2703;
+    background-color: #8c270300;
     color: white;
+}
+
+.videoBackground{
+    background-image: url(./images/pizza\ video-background\ map.mp4);
+    padding: 30px;
 }
 
 table {
