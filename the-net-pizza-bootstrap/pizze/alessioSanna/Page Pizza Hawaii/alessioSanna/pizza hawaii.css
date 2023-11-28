@@ -94,4 +94,16 @@ p{
     color: antiquewhite;
 }
 
+/* header  */
+.homepage-fluid{}
+
+#title-slide-right{
+   padding: 30vh;
+   transition: transform 0.5s ease-in-out;
+}
+
+#title:hover {
+    transform: translateX(50px); /* Sposta l'elemento di 50px verso destra al passaggio hover */
+  }
+
 
