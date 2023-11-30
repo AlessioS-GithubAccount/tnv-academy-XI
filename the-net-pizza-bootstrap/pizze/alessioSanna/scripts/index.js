@@ -375,6 +375,17 @@ const MENU_DATA = [
 
   const buildSection = function(menu, category){
     const categoryItems = menu.filter(x=>x.category === category);      // prende solo gli oggetti con category come in param
-    const ulElement = document.getElementById(category);        //
+    const ulElement = document.getElementById(category);        //linka a una const un div del DOM
+
+    for(let  categoryItem of categoryItems){
+        const liElement = document.createElement('li');
+        liElement.innerText = categoryItem.title;
+        ulElement.appendChild(liElement);
+    }
+
+
+
 
   }
+
+  buildSection(MENU_DATA, 'antipasti');
