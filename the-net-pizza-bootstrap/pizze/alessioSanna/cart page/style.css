@@ -30,3 +30,29 @@ body {
   .checkout-btn {
     margin-top: 20px;
   }
+
+  /* button carrello */
+.custom-dropdown {
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Nascondi la finestrella di default */
+}
+
+.nav-item:hover .custom-dropdown {
+  display: block; /* Mostra la finestrella al passaggio del mouse sul link "Il tuo ordine" */
+}
+
+.custom-dropdown-content {
+  /* Stili del contenuto della finestrella */
+  padding: 8px;
+  color: black;
+  /* Aggiungi qui gli stili desiderati */
+}
