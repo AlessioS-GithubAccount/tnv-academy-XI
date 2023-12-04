@@ -383,9 +383,16 @@ const MENU_DATA = [
         ulElement.appendChild(liElement);
     }
 
-
-
-
   }
+
+  /* internal page link  */
+  function scrollToSection(sectionId) {
+    document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  const aggiungi_all_ordine = function(menu, id){
+    const itemCarrello = document.getElementsByTagName("button_aggiungi_all'ordine")
+  }
+
 
   buildSection(MENU_DATA, 'antipasti');
