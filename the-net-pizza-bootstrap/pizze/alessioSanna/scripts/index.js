@@ -373,26 +373,72 @@ const MENU_DATA = [
     }
   ];
 
+  const buildItemOrder = function(menu, id){
+   const itemOrder = menu.filter(x=>x.id===id);   //prende solo l'oggetto che ha quel id
+
+   const divItemOrder = document.getElementById(id);
+  }
+
   const buildSection = function(menu, category){
     const categoryItems = menu.filter(x=>x.category === category);      // prende solo gli oggetti con category come in param
-    const ulElement = document.getElementById(category);        //linka a una const un div del DOM
+    const divParentElement = document.getElementById(category);        //linka a una const un div del DOM
 
     for(let  categoryItem of categoryItems){
-        const liElement = document.createElement('li');
-        liElement.innerText = categoryItem.title;
-        ulElement.appendChild(liElement);
+        const cardElement = document.createElement('div');
+        cardElement.innerHTML = buildCard(categoryItem);
+        divParentElement.appendChild(cardElement);
     }
 
   }
+
+  let counterItemCarrello = piatto.quantitaItem;
+
+const buildCard = function(piatto, counter) {
+  return `<div class="col col-sm-8">
+    <div class="card shadow " style="height: 100px;"> <!-- Altezza personalizzata -->
+      <h5 class="card-title">${piatto.title}</h5>
+      <span class="badge bg-secondary">${counter}</span> <!-- Numero item -->
+      <span class="badge bg-success">€ ${piatto.price}</span> <!-- Prezzo -->
+      <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0 addToCartBtn" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+    </div>
+  </div>`;
+};
+
+// Aggiungi un event listener per i pulsanti "Aggiungi all'ordine"
+document.addEventListener('click', function (event) {
+  if (event.target.classList.contains('addToCartBtn')) {
+    counterItemCarrello += 1;
+    // Aggiorna l'elemento del carrello nel DOM
+    updateCartCounter(counterItemCarrello);
+  }
+});
+
+// Funzione per aggiornare il conteggio del carrello nel DOM
+function updateCartCounter(counterItemCarrello) {
+  const cartCounterElement = document.getElementById('cartCounter');
+  if (cartCounterElement) {
+    cartCounterElement.textContent = counterItemCarrello;
+  }
+}
+
+
+  /* 
+  let counterItemCarrello = piatto.quantitaItem; 
+  const buildCard = function(piatto){
+    counterItemCarrello +=1;
+    return `<div class="col col-sm-8">
+    <div class="card shadow " style="height: 100px;"> <!-- Altezza personalizzata -->
+      <h5 class="card-title">${piatto.title}</h5>
+      <span class="badge bg-secondary">${counter}</span> <!-- Numero item -->
+      <span class="badge bg-success">€ ${piatto.price}</span> <!-- Prezzo -->
+      <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Rimuovi dall'ordine</button>
+    </div>
+  </div>`
+  }  */
 
   /* internal page link  */
   function scrollToSection(sectionId) {
     document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
   }
-
-  const aggiungi_all_ordine = function(menu, id){
-    const itemCarrello = document.getElementsByTagName("button_aggiungi_all'ordine")
-  }
-
 
   buildSection(MENU_DATA, 'antipasti');
