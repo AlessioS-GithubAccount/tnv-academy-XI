@@ -416,12 +416,13 @@ const MENU_DATA = [
     divContainer.appendChild(cardElement);      //aggiungo all interno la card creata
   }
 
+  /* costruisce una card piatto random */
   fetch('https://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti/')
   .then(res => res.json())
   .then(res => buildRandomMenu(res))
   .catch(err => console.log('ERRORE'))
 
-
+  /* costruisce un menu random */
   fetch('https://my-json-server.typicode.com/michelefenu/tnv-academy-XI/piatti/')
   .then(res => res.json())
   .then(res => buildMenu(res))
