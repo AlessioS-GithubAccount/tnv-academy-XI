@@ -1,0 +1,508 @@
+  <!DOCTYPE html>
+  <html lang="it">
+
+  <head>
+    <title>The Net Pizza(the pizza house)</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a href="#falseHeader3">
+          <img id="logoPage" src="./images/pizza-logo-E6DE845BD3-seeklogo.com.png" alt="Logo" width="80vh" height="auto" class="d-inline-block align-text-top">
+        </a>
+        <a class="navbar-brand" href="#">THE PIZZA HOUSE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse custom-navbar-collapse" id="navbarNavDropdown">
+
+          <ul class="navbar-nav">
+            <!-- ... Altri elementi della navbar ... -->
+            
+            <!-- Dropdown con i pulsanti -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Menù & Ordina
+              </a>
+              <div class="dropdown-menu">
+                <button class="dropdown-item" onclick="scrollToSection('#falseHeader2')">Ordina</button>
+                <button class="dropdown-item" onclick="scrollToSection('#falseHeader')">Menu</button>
+                <button class="dropdown-item" onclick="scrollToSection('#therealfooter')">Contatti</button>
+                <script>
+                  function scrollToSection(sectionId) {
+                  document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
+                  }
+                </script>
+                
+                <!-- Aggiungi il componente dropdown personalizzato per Il tuo ordine -->
+              </div>
+            </li>
+            <li>
+              <button class="dropdown-item nav-link" data-bs-toggle="modal" data-bs-target="#yourOrderModal">Il tuo ordine <i class="fa-solid fa-cart-shopping"></i> </button>
+
+            </li>
+          </ul>
+
+          
+          <div class="modal fade" id="yourOrderModal" tabindex="-1" aria-labelledby="yourOrderModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+              <div class="modal-content">
+                <!-- Aggiungi qui il contenuto personalizzato per Il tuo ordine -->
+                
+                <!-- Ad esempio, puoi usare il codice del modal della domanda precedente -->
+                <div class="modal-header">
+                  <h5 class="modal-title" id="yourOrderModalLabel">Il tuo ordine</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <!-- Contenuto del tuo ordine -->
+                  <!-- Esempio: -->
+                  <div class="col col-sm-8">
+                    <div class="card shadow " style="height: 100px;"> <!-- Altezza personalizzata -->
+                      <h5 class="card-title">Pizza Margherita</h5>
+                      <span id="cartCounter" class="badge bg-secondary">1</span> <!-- Numero item -->
+                      <span class="badge bg-success">€6.00</span> <!-- Prezzo -->
+                      <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Rimuovi dall'ordine</button>
+                    </div>
+                </div>
+               </div>
+               
+
+            
+                
+
+          
+        </div>
+      </div>
+    </nav>
+
+    
+
+    
+
+      
+    <header>
+      <video id="background-video" autoplay loop muted poster="./images/10372997_4464061.jpg">
+      <source src="./images/production_id_4457933 (2160p).mp4" type="video/mp4">
+      </video>
+      <h1>The Pizza House</h1>
+      <p>Real Italian Experience</p>
+    </header>
+
+      <div class="container containerSmartphon">
+        <div id="falseHeader3">
+          <h1></h1>
+        </div>
+        <section class="bio">
+          <div class="LogoBioClass">
+            <img id="LogoBio" src="./images/pizza-logo-E6DE845BD3-seeklogo.com.png" alt="">
+            
+          </div>
+          <div class="separator mbBio"></div>
+          <h1>Benvenuto</h1>
+          <h3>Ti andrebbe una fetta di pizza ??</h3>
+          <p>Esplora il mondo del gusto al The Pizza House! Concediti il piacere di assaporare le nostre deliziose pizze, i primi piatti ricchi di sapore e i decadenti dessert, il tutto nel comfort di casa tua o nell'atmosfera accogliente del nostro locale. Scopri un'esperienza gastronomica unica, dove i sapori autentici della cucina italiana si fondono per deliziare il tuo palato.</p>
+
+            <div class="alignBio">
+
+              <h2 class="titleBio">La nostra storia.</h2>
+              <img id="imgbw" src="./images/photoB&W.jpg" alt="">
+              <p>"Benvenuti nel cuore dell'autentica tradizione culinaria italiana presso la nostra pizzeria! Con una storia radicata nella passione per la buona cucina, il nostro ristorante offre un viaggio gastronomico attraverso le deliziose tradizioni della pizza italiana. Ogni morso è un'esperienza unica, grazie all'uso di ingredienti freschi e di alta qualità. La nostra pizzeria, situata nel pittoresco [Nome della Città], è il luogo ideale per famiglie, amici e amanti del buon cibo. Con il nostro forno a legna e la dedizione alla perfezione, vi invitiamo a condividere momenti indimenticabili di gusto e convivialità. Scoprite la magia delle pizze cotte secondo la tradizione e lasciatevi avvolgere dall'atmosfera accogliente della nostra pizzeria."</p>
+      
+            </div>
+          
+        </section>
+      </div>
+
+      <div class="containerRicetta">
+
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <h4>La nostra pizza segue la ricetta della tradizione.</h4>
+              <p>La nostra pizza tradizionale è un'ode alla semplicità e alla qualità. 
+                La base inizia con una miscela di acqua, sale e farina dei migliori grani selezionati, creando una consistenza perfetta che è la firma delle vere pizze artigianali. 
+                Il segreto risiede nel lievito madre tramandato da generazioni, custodito con passione dall'antico forno. 
+                I pomodori freschi, coltivati localmente donano un gusto autentico e genuino. 
+            </div>
+            <div class="col">
+              <img id="farine"src="./images/farine.jpg" alt="">
+            </div>
+
+            <div class="container text-center">
+              <div class="row">
+                <div class="col">
+                  <img id="pizzeriaImg" src="./images/pizzeria-country-chic-683x1024.jpg" alt="">
+                </div>
+                <div class="col">
+                  <h4>Mangi da noi o te la portiamo a casa come appena sfornata.</h4>
+                  <p>
+                    Da oltre 35 anni punto di riferimento per gli amanti della buona cucina ad Alessandria, il nostro ristorante pizzeria propone anche ottimi primi e secondi piatti di carne o di pesce con il giusto rapporto qualità/prezzo. Il tutto accompagnato da una vasta scelta di birre e di vini pregiati, selezionati tra quelli dei migliori produttori nazionali e internazionali.
+                    Ogni pietanza è preparata con cura e dedizione grazie all’esperienza e alla capacità dei nostri chef di dar vita a piatti sempre ricchi di bontà e di sapore, come testimoniano le recensioni ricevute su Tripadvisor.
+                    Il nostro personale ti accoglierà in una location elegante e originale e ti farà sentire come a casa; ogni tua richiesta verrà ascoltata e soddisfatta.
+                    Siamo aperti tutti i giorni, tranne il giovedì.
+                  </p>
+                </div>
+                
+            
+          </div>
+        </div>
+
+      </div>
+
+  
+    <div class="container-menu">
+      <section class="menu">
+        <div class="row">
+          <div class="col-12">
+            <div id="falseHeader">
+              <h1></h1>
+            </div>
+            <h2 id="section-menu" class="section-title">I Nostri Piatti</h2>
+            
+            <p>Esplora la vasta selezione di prelibatezze nel nostro eclettico menù. 
+              Da gustose pizze tradizionali a primi piatti irresistibili, 
+              secondi succulenti e dessert deliziosi, offriamo un viaggio culinario
+              che soddisferà ogni palato. 
+              La varietà delle nostre ricette, preparate con ingredienti freschi e di alta qualità, 
+              ti garantirà un'esperienza gastronomica indimenticabile. 
+              Siamo certi che troverai il piatto perfetto per ogni occasione, 
+              rendendo il tuo pasto con noi un momento speciale e appagante.
+            </p>
+            <div class="separator"></div>
+          </div>
+        </div>
+
+        <!-- collapse menu pizze classiche  -->
+        <div id="pizzeClassiche" class="row">
+          
+          <a class="btn btn-primary curtain" data-bs-toggle="collapse" href="#collapseExample" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <video autoplay loop muted playsinline class="video-background">
+            <source src="./images/pizzaButton-pizza_-_123629 (360p).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+            <h2>Pizze classiche</h2>
+          </a>
+      
+          <div class="collapse" id="collapseExample">
+              <div class="card card-body">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                      <!-- Adjusted the structure to use Bootstrap grid system -->
+                      <div class="col">
+                          <div class="card shadow">
+                              <img src="./images/pizza margherita.jpg" class="card-img-top" alt="pizzaMargherita" />
+                              <div class="card-body position-relative" >
+                                <h5 class="card-title">Pizza Margherita</h5>
+                                <p class="card-text">Pomodoro, mozzarella, olio evo e origano. ... 6€</p>
+                                <button type="button"  name = "button_aggiungi_all'ordine" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card shadow">
+                              <img src="./images/pizza olive.jpg" class="card-img-top" alt="pizzaOlivei" />
+                              <div class="card-body position-relative" >
+                                <h5 class="card-title">Pizza alle olive</h5>
+                                  <p class="card-text">Pomodoro, mozzarella e olive nere. ... 8€</p>
+                                  <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card shadow">
+                              <img src="./images/Pizza pepperoni.jpg" class="card-img-top" alt="pizzaPepperoni" />
+                              <div class="card-body position-relative" >
+                                <h5 class="card-title">Pizza pepperoni</h5>
+                                  <p class="card-text">Pomodoro, mozzarella, salsiccia piccante, cheddar. ... 9€</p>
+                                  <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+          
+        <!-- collapse menu primi  -->
+        <div id="primi" class="row">
+          
+          <a class="btn btn-primary curtain" data-bs-toggle="collapse" href="#collapseExamplePrimi" role="button"
+              aria-expanded="false" aria-controls="collapseExample">
+              <video autoplay loop muted playsinline class="video-background">
+                <source src="./images/primiVideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+              <h2>Primi</h2>
+          </a>
+      
+          <div class="collapse" id="collapseExamplePrimi">
+              <div class="card card-body">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                      <!-- Adjusted the structure to use Bootstrap grid system -->
+                      <div class="col">
+                          <div class="card shadow">
+                              <img src="/the-net-pizza-bootstrap/assets/images/carbonara.jpg" class="card-img-top" alt="carbonara" />
+                              <div class="card-body position-relative" >
+                                <h5 class="card-title">Pasta alla carbonara </h5>
+                                  <p class="card-text">Pasta grano duro, uova fresche, grana padano, pancetta, sale, pepe ... 16€</p>
+                                  <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card shadow">
+                              <img src="/the-net-pizza-bootstrap/assets/images/fregola-arselle.jpg" class="card-img-top" alt="fregola-arselle" />
+                              <div class="card-body position-relative" >
+                                <h5 class="card-title">Fregola alla marinara</h5>
+                                  <p class="card-text">Fregola di grano duro, pomodoro, cozze, arselle, gambero rosso, prezzemolo, aglio, spezie ... 20€</p>
+                                  <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                                </div>
+                          </div>
+                      </div>
+                      <div class="col">
+                          <div class="card shadow">
+                              <img src="/the-net-pizza-bootstrap/assets/images/risotto-funghi.jpg" class="card-img-top" alt="risottoAiFunghi" />
+                              <div class="card-body position-relative" >
+                                <h5 class="card-title">Risotto ai funghi</h5>
+                                  <p class="card-text">Riso carnaroli, fungo porcino, fungo champignon, grana padano, burro. ... 18€</p>
+                                  <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                                </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+      <!-- collapse menu dessert  -->
+      <div id="dessert" class="row">
+          
+        <a class="btn btn-primary curtain" data-bs-toggle="collapse" href="#collapseExampleDessert" role="button"
+            aria-expanded="false" aria-controls="collapseExample">
+            <video autoplay loop muted playsinline class="video-background">
+              <source src="./images/dessert.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
+            <h2>Dessert</h2>
+        </a>
+    
+        <div class="collapse" id="collapseExampleDessert">
+            <div class="card card-body">
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Adjusted the structure to use Bootstrap grid system -->
+                    <div class="col">
+                        <div class="card shadow">
+                            <img src="/the-net-pizza-bootstrap/assets/images/seadas.jpg" class="card-img-top" alt="seadas" />
+                            <div class="card-body position-relative" >
+                              <h5 class="card-title">Seadas </h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet elit. Blanditiis inventore facilis corrupti fugit. Doloribus illo voluptas accusantium minus in error placeat hic! ... 11€</p> 
+                                <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow">
+                            <img src="/the-net-pizza-bootstrap/assets/images/tiramisu.jpg" class="card-img-top" alt="tiramisu" />
+                            <div class="card-body position-relative" >
+                              <h5 class="card-title">Tiramisù</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet elit. Blanditiis inventore facilis corrupti fugit. Doloribus illo voluptas accusantium minus in error placeat hic! ... 11€</p>
+                                <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card shadow">
+                            <img src="/the-net-pizza-bootstrap/assets/images/cheesecake.jpg" class="card-img-top" alt="cheesecake" />
+                            
+                            <div class="card-body position-relative" >
+                              <h5 class="card-title">Cheesecake</h5>
+                              <p class="card-text">Lorem ipsum dolor sit amet elit. Blanditiis inventore facilis corrupti fugit. Doloribus illo voluptas accusantium minus in error placeat hic! ... 11€</p>
+                              <button type="button" class="btn btn-success btn-sm position-absolute bottom-0 start-0 end-0" style="background-color: rgb(191, 45, 45);">Aggiungi all'ordine +</button>
+                            </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+
+
+    <section id="Ordina">
+
+          <div class="container">
+            <div id="falseHeader2">
+              <h1></h1>
+            </div>
+            <div class="container-ordinaSubito ">
+            
+            <h2 id="ordinarapido" class="section-title">Ordina subito</h2>
+            <p>Scegli tu se accomodarti a uno dei nostri tavoli oppure ordina comodamente 
+              da casa e ti portiamo noi tutto quello che desideri. </p>
+            <div class="separator Sepatator-mg"></div>
+          </div>
+        
+
+      <div class="row ">
+        <!-- Colonna sinistra -->
+        <div class="col-md-6 d-flex ">
+          <div class="flex-grow-1 border">  
+            <!-- Contenuto sinistra -->
+            <section id="Ordina">
+              <form id="formOrdina">
+                <div class="titleTablet">
+                  <h3>Ordina da questo tablet</h3>
+                <h3>oppure</h3>
+                <h3>chiamaci al +39 333 154 687  </h3>
+                <div class="separator"></div>
+                </div>
+                
+                
+                <!-- Il resto del form... -->
+                <div class="mb-3">
+                  
+                  <label for="name" class="form-label">Nome e Cognome</label>
+                  <input type="text" class="form-control" id="name" placeholder="Inserisci un nominativo per l'ordine" />
+                </div>
+
+                <div class="mb-3 ">
+                  <label for="surname" class="form-label">Numero di telefono</label>
+                  <input type="text" class="form-control" id="surname" placeholder="+ 39"/>
+                </div>
+
+                <div class="form-floating mb-3">
+                  <h5>Ordina:</h5>
+                  <textarea
+                    class="form-control"
+                    placeholder="Inserisci qui il tuo ordine..."
+                    id="order"
+                    style="height: 100px"
+                  ></textarea>
+                  
+                </div>
+              
+                <div class="mb-3">
+                  <button id="buttonOrdina" type="submit" class="btn btn-primary">Ordina</button>
+                </div>
+              </form>
+            </section>
+          </div>
+        </div>
+    
+        <!-- Colonna destra -->
+        <div class="col-md-6">
+          <!-- Contenuto destra -->
+          <a href="./images/modello-menu-pizzeria-cucina-italiana-cucina-cibo-pizza-ingredienti-cucina-pranzo-e-dessert-sfondo-vettoriale-2bnn9jm.jpg">
+            <img id="imgmenu" src="./images/pizza-menu-food-truck-design-template-581f96fd227f10eba61e2c5120398db4_screen.jpg" target="_blank" alt="menu pizzeria ">
+
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+    <footer class="container-fluid videoBackground">
+      
+      <div class="row">
+        <video id="background-video2" autoplay loop muted poster="./images/10372997_4464061.jpg">
+          <source src="./images/pizza video-background map.mp4" type="video/mp4">
+        </video>
+        <section class="where-we-are col-12  col-md-6">
+          <h2 class="footer-section-title">Dove Siamo</h2>
+          <iframe id="mapAdress"  src="https://www.openstreetmap.org/export/embed.html?bbox=8.442993164062502%2C44.8366389116501%2C8.764343261718752%2C44.99709652176981&amp;layer=mapnik" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=12/44.9169/8.6037">Visualizza mappa ingrandita</a></small>
+          
+        </section>
+        <section class="where-we-are col-6  col-md-6">
+          <h2 class="footer-section-title">Credits</h2>
+        
+        <ul>
+          <li> <p>Production: The Net Value Srl</p></li>
+          <li> <p>Team edition: Fullstack developer 11 </p></li>
+          <li> <p>Author: Frontend development and design by Alessio Sanna</p></li>
+        </ul>
+        </section>
+      </div>
+    </footer>
+
+    <div id="containerOrari">
+
+      <div id="tabOrari">
+        <h1>Aperto tutti i giorni </h1>
+        <h5>Pranzo : 12.00 - 15.00</h5>
+        <h5>Cena  : 19.00 - 24.00</h5> 
+        <h4> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+          <!-- icona telefono toCall --><path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg> Telefono: +39 346 99 65 3521</h4>
+      </div>
+    </div>
+
+    <div class="footer2 container-fluid">
+      <div class="address">
+        <p>Pizzeria <strong> The Pizza House </strong>– Via Gerolamo Plana, 41 – 15121 Gardaland (VR) </p> 
+        <p>
+          <hr>
+          P.IVA 01098850066 – Privacy e Cookie policy – Progetto web a cura di <a href="http://ASDeveloop">Alessio Sanna</a>
+        </p>
+    
+      </p> 
+      </div>
+      
+    
+      <div id="therealfooter" class="buttonbar-social">
+        <ul class="social-icons">
+          <li>
+            <a href="https://www.facebook.com/" target="_blank">
+              <i class="fab fa-facebook"></i> <!-- Icona Facebook -->
+            </a>
+          </li>
+          <li>
+            <a href="mailto:thepizzahouse@gmail.com">
+              <i class="fa fa-envelope"></i><!-- icona mailto -->
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank">
+              <i class="fab fa-instagram"></i> <!-- Icona Instagram -->
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/1234567890" target="_blank">
+              <i class="fab fa-whatsapp"></i> <!-- Icona WhatsApp -->
+            </a>
+          </li>
+            
+
+          
+        </ul>
+    </div>
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-c9c0cf666662b3e5ff1f9bd919e95703b2283f65b15819d7c9cc145ab27d4545"
+    crossorigin="anonymous"></script>
+  </body>
+
+  </html>

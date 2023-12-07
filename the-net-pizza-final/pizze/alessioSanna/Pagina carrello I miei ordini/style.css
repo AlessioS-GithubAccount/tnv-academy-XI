@@ -1,0 +1,268 @@
+body {
+    background-color: #f8f9fa;
+    max-width: 1400px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: #ffffff;
+  }
+
+  #falseHeader1a{
+    width: 100%;
+    height: 40vh;
+  }
+
+  #titlepage{
+    width: 100%;
+    text-align: center;
+  }
+
+  .container h1{
+    text-align: center;
+  }
+
+
+
+  .container {
+    margin-top: 20px;
+  }
+
+  .card {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .card img {
+    max-width: 30%;
+    height: auto;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+
+  .checkout-btn {
+    margin-top: 20px;
+  }
+
+  /* button carrello */
+.custom-dropdown {
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 100px;
+  height: 16px;
+  background-color: #ffffff;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none; /* Nascondi la finestrella di default */
+}
+
+.nav-item:hover .custom-dropdown {
+  display: block; /* Mostra la finestrella al passaggio del mouse sul link "Il tuo ordine" */
+}
+
+.custom-dropdown-content {
+  /* Stili del contenuto della finestrella */
+  padding: 8px;
+  color: black;
+  /* Aggiungi qui gli stili desiderati */
+}
+
+/* top navbar */
+/* css navbar generale */
+
+.container-fluid{
+  padding-left: 4vw;
+  text-align: center;
+}
+
+#background-video{
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+#background-video2{
+  width: 100%;
+  height: auto;
+  z-index: -1;
+}
+
+.navbar {
+background-color: rgba(22, 22, 22, 0.95 ) !important; 
+}
+
+/* css  dei bottoni dentro id="navbarNavDropdown" */
+#logoPage{
+  margin-left: 2vw;
+}
+.nav-item{
+  margin-right: 4vw;
+}
+.navbar-nav {
+  margin-left: auto;
+  padding-right: 4vw;
+}
+
+.navbar-nav .nav-link {
+  color: rgb(191, 45, 45) !important;
+  font-weight: 600; /* Semibold */
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+  color: antiquewhite !important;
+  font-weight: 600; /* Semibold */
+}
+
+/* css del nome del sito */
+.navbar-brand {
+  color: antiquewhite !important;
+  font-size: 2.5em;
+  font-weight: 600; /* Semibold */
+  text-decoration: none;
+  padding-left: 26vw;
+}
+
+a.navbar-brand{
+  margin-right: auto;
+}
+
+.navbar-brand:hover {
+  color: antiquewhite !important;
+  font-weight: 600; /* Semibold */
+  text-decoration: none;
+}
+
+.navbar-brand{
+  margin-left: 2vw;
+}
+
+/* dropdown menu */
+.dropdown-menu{
+  background-color:  rgba(22, 22, 22, 0.95 );
+}
+
+.dropdown-menu button{
+  color: rgb(191, 45, 45) !important;
+  font-weight:bold;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p{
+  font-family: 'Titillium Web', sans-serif;
+  color: rgb(0, 0, 0);
+}
+
+/* Stili per schermi da smartphone più diffusi a tablet più diffusi */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Altre regole CSS per tablet... */
+
+  /* Navbar generale */
+  .navbar {
+      height: 100px;  
+  }
+
+  /* Pannello di collapse (burger menu) */
+  .navbar-collapse {
+      background-color: rgba(22, 22, 22, 0.95); /* Stesso colore della navbar */
+  }
+}
+
+/* Dimensioni schermo fino agli smartphone più diffusi al momento */
+@media screen and (max-width: 600px) {
+  /* Inserisci qui le regole CSS per gli smartphone */
+  .navbar {
+      height: 100px;  
+      position: fixed; /* Fissa la navbar */
+      top: 0; /* Allinea la navbar con il bordo superiore dello schermo */
+      width: 100%; /* Occupa l'intera larghezza dello schermo */
+      z-index: 1000;
+  }
+
+  .navbar-brand{
+      margin-left: 12vw;
+  }
+
+  header h1 {
+      margin-top: 42px;
+      font-size: 4rem;
+  }
+
+  header p {
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+  }
+
+  header {
+      height: 500px;
+      padding-top: 100px;
+  }
+
+  .background-video{
+      height: 100%;
+  }
+
+  header {
+      position: relative;
+      text-align: center;
+      overflow: hidden;
+  }
+
+  #background-video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Applica l'effetto di copertura al video */
+  }
+
+  .containerSmartphone{
+      padding-top: 0;
+  }
+
+  .mapAdress{
+      width: 22.81em ;
+      height: 18.13em;
+  }
+}
+
+/* Dimensioni schermo da smartphone più diffusi a tablet più diffusi */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  /* Inserisci qui le regole CSS per tablet */
+  header h1 {
+      margin-top: 42px;
+      font-size: 4rem;
+  }
+
+  header p {
+      color: white;
+      font-family: 'Pacifico', cursive;
+      font-size: 1.5rem;
+  }
+
+  header {
+      height: 350px;
+  }
+
+  .section-title {
+      font-size: 2.5em;
+  }
+}
