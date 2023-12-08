@@ -136,6 +136,13 @@ a.navbar-brand{
 
 }
 
+.custom-navbar-collapse {
+    width: 100px!important; /* Puoi regolare la larghezza desiderata in base alle tue esigenze */
+}
+
+
+
+
 h1,
 h2,
 h3,

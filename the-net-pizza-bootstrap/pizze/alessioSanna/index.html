@@ -15,7 +15,7 @@
   <body>
 
     <nav class="navbar navbar-expand-lg fixed-top bg-body-tertiary">
-      <div class="container-fluid">
+      <div class="container-fluid positionButtonBurger">
         <a href="#falseHeader3">
           <img id="logoPage" src="./images/pizza-logo-E6DE845BD3-seeklogo.com.png" alt="Logo" width="80vh" height="auto" class="d-inline-block align-text-top">
         </a>
@@ -35,10 +35,10 @@
                 Menù & Ordina
               </a>
               <div class="dropdown-menu">
-                <button class="dropdown-item" onclick="scrollToSection('#falseHeader2')">Ordina</button>
-                <button class="dropdown-item" onclick="scrollToSection('#falseHeader')">Menu</button>
-                <button class="dropdown-item" onclick="scrollToSection('#therealfooter')">Contatti</button>
-                <script>
+                <button class="dropdown-item nav-link d-flex justify-content-center align-items-center" onclick="scrollToSection('#falseHeader2')">Ordina</button>
+                <button class="dropdown-item nav-link d-flex justify-content-center align-items-center" onclick="scrollToSection('#falseHeader')">Menu</button>
+                <button class="dropdown-item nav-link d-flex justify-content-center align-items-center" onclick="scrollToSection('#therealfooter')">Contatti</button>
+                                <script>
                   function scrollToSection(sectionId) {
                   document.querySelector(sectionId).scrollIntoView({ behavior: 'smooth' });
                   }
